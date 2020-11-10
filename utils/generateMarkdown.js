@@ -1,15 +1,17 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
   return `
-  # Title of the project
+  # Title of the project: ${data.ProjectTitle}
 
-  ${data.ProjectTitle} 
+
+  [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/${data.GitHubUsername}/${data.ProjectTitle})
+
   
-  ## Description
+  ## Description:
   
   ${data.ProjectDescription}
   
-  ## Table of Contents
+  ## Table of Contents:
   
   * [Installation](#installation)
   * [Usage](#usage)
